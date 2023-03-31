@@ -2,8 +2,7 @@
 
 ## Description
 
-Given a dataset in this Console-Finances Project I used JavaScript to make a Financial analysis which can be seen
-at Chrome console panel.
+Given a dataset in this Console-Finances Project, I used JavaScript to make a Financial analysis which can be seen in the Chrome console panel.
 
 ## Installation
 
@@ -11,13 +10,13 @@ N/A
 
 ## Usage
 
-To use this Console-Finances Project first, open the Chrome DevTools by pressing Command+Option+I (MacOS) or Control+Shift+I (Windows). A console panel should open either bellow or on the side of the webpage in the browser. There you will see a Financial analysis made with JavaScript.
+To use this Console-Finances Project first, open the Chrome DevTools by pressing Command+Option+I (MacOS) or Control+Shift+I (Windows). A console panel should open either below or on the side of the webpage in the browser. There you will see a Financial analysis made with JavaScript.
 
-![Website link](https://fot28.github.io/Console-Finances/)
+[Website link](https://fot28.github.io/Console-Finances/)
 
 ![Screenshot](/images/screenshot.png)
 
-For more information, please visit [https://fot28.github.io/Bootstrap-Portfolio/](https://github.com/Fot28/Console-Finances.git).
+For more information, please visit [https://github.com/Fot28/Console-Finances.git]
 
 ## Credits
 
