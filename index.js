@@ -93,6 +93,11 @@ var greatIncMonth = 0
 var greatDecAmount = 0
 var greatDecMonth = 0
 
+for (i=1; i<finances.length; i++){
+  total = total + finances[i][1]
+  averageChange = averageChange + (finances[i][1] - finances[i-1][1])
+  
+}
 
 var totalResult = total+finances[0][1]
 var averageChangeResult = (averageChange/(finances.length - 1))
