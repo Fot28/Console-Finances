@@ -1,3 +1,4 @@
+// Financial data array
 var finances = [
   ['Jan-2010', 867884],
   ['Feb-2010', 984655],
@@ -86,6 +87,8 @@ var finances = [
   ['Jan-2017', 138230],
   ['Feb-2017', 671099],
 ];
+
+// Initialize variables to store calculated values
 var total = 0
 var averageChange = 0
 var greatIncAmount = 0
@@ -93,21 +96,30 @@ var greatIncMonth = 0
 var greatDecAmount = 0
 var greatDecMonth = 0
 
+// Loop through the array of financial data, starting from the second element
 for (i=1; i<finances.length; i++){
+  // Calculate the total amount of profits/losses over the entire period
   total = total + finances[i][1]
+  // Calculate the sum of change in profits/losses per month
   averageChange = averageChange + (finances[i][1] - finances[i-1][1])
+
+  // Check if the current month has the greatest increase in profits/losses so far
   if (greatIncAmount < finances[i][1] - finances[i-1][1]){
     greatIncAmount = finances[i][1] - finances[i-1][1]
     greatIncMonth = finances[i][0]
-  } else if (greatDecAmount > finances[i][1] - finances[i-1][1]) {
+  } 
+    // Check if the current month has the greatest decrease in profits/losses so far
+    else if (greatDecAmount > finances[i][1] - finances[i-1][1]) {
     greatDecAmount = finances[i][1] - finances[i-1][1]
     greatDecMonth = finances[i][0]
   }
 }
-
+// Calculate the total amount of profits/losses over the entire period (including the first month)
 var totalResult = total+finances[0][1]
+// Calculate the average change in profits/losses per month and round it to 2 decimal places
 var averageChangeResult = (averageChange/(finances.length - 1)).toFixed(2)
 
+// Print the results to the console
 console.log("Financial Analysis")
 console.log("----------------------------")
 console.log("Total Months: " + finances.length)
