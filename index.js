@@ -106,12 +106,12 @@ for (i=1; i<finances.length; i++){
 }
 
 var totalResult = total+finances[0][1]
-var averageChangeResult = (averageChange/(finances.length - 1))
+var averageChangeResult = (averageChange/(finances.length - 1)).toFixed(2)
 
 console.log("Financial Analysis")
 console.log("----------------------------")
 console.log("Total Months: " + finances.length)
 console.log("Total: " + "$" + totalResult)
-console.log("Average Change: " + averageChangeResult.toFixed(2))
+console.log("Average Change: " + averageChangeResult)
 console.log("Greatest Increase in Profits/Losses: " + greatIncMonth + " ($" + greatIncAmount + ")")
 console.log("Greatest Decrease in Profits/Losses: " + greatDecMonth + " ($" + greatDecAmount + ")")
