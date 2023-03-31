@@ -86,7 +86,16 @@ var finances = [
   ['Jan-2017', 138230],
   ['Feb-2017', 671099],
 ];
+var total = 0
+var averageChange = 0
+var greatIncAmount = 0
+var greatIncMonth = 0
+var greatDecAmount = 0
+var greatDecMonth = 0
 
+
+var totalResult = total+finances[0][1]
+var averageChangeResult = (averageChange/(finances.length - 1))
 
 console.log("Financial Analysis")
 console.log("----------------------------")
