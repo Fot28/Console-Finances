@@ -87,27 +87,6 @@ var finances = [
   ['Feb-2017', 671099],
 ];
 
-var total = 0
-var averageChange = 0
-var greatIncAmount = 0
-var greatIncMonth = 0
-var greatDecAmount = 0
-var greatDecMonth = 0
-
-for (i=1; i<finances.length; i++){
-  total = total + finances[i][1]
-  averageChange = averageChange + (finances[i][1] - finances[i-1][1])
-  if (greatIncAmount < finances[i][1] - finances[i-1][1]){
-    greatIncAmount = finances[i][1] - finances[i-1][1]
-    greatIncMonth = finances[i][0]
-  } else if (greatDecAmount > finances[i][1] - finances[i-1][1]) {
-    greatDecAmount = finances[i][1] - finances[i-1][1]
-    greatDecMonth = finances[i][0]
-  }
-}
-
-var totalResult = total+finances[0][1]
-var averageChangeResult = (averageChange/(finances.length - 1))
 
 console.log("Financial Analysis")
 console.log("----------------------------")
